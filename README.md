@@ -1,9 +1,7 @@
 # TSDF Fusion given Camera Parameters and RGB-D Images
 
 This repo is to demonstrate how to fuse a set of registered RGB-D images into a truncated signed distance function
-(TSDF) volume. Here TSDF volume is one kind of implicit representation for shape which can be used to create other explicit
-representations (for example, point-cloud and mesh) for shape. In the data directory, color image is saved as 640 x 480 x 3 array for rgb channels, depth image is saved as 640 x 460 array for depth in millimeters, and camera pose is saved as 4 x 4 matrix in plain text. A camera pose represents the coordinate transformation (rotation and translation) from a camera frame to the world frame.
-Camera intrinsic parameters are saved as 3 x 3 matrix in plain text. Camera intrinsic parameters represent the projection of 3D points in the world frame to image-plane in the camera frame.
+(TSDF) volume. Here TSDF volume is one kind of implicit representation for surface or shape which can be used to create other explicit representations (for example, point-cloud and mesh) through marching cubes method. In the data directory, color image is saved as 640 x 480 x 3 array for rgb channels, and depth image is saved as 640 x 480 array for depth in millimeters. Camera pose is saved as 4 x 4 matrix in plain text. A camera pose represents the coordinate transformation (rotation and translation) from a camera frame to the world frame. Camera intrinsic parameters are saved as 3 x 3 matrix in plain text. Camera intrinsic parameters represent the projection of 3D points in the camera frame to the 2D image plane.
 
 <img src="image/1.png" height=300px />
 
